@@ -1,0 +1,5 @@
+.Cart{border-radius: 50%;height: 5rem;width:5rem;background-color:yellow;right: 0;bottom:0;position: fixed;margin-right: 1rem;margin-bottom:1rem;z-index:20}
+
+.Cart_container{display:none;height: 20rem;width: 30%;background-color:(pink);border-radius: 0rem 0rem 3rem 3rem;right:0;bottom: 0;position:fixed;z-index: 19;}
+
+.Add_Cart{height: 10rem;width: 30rem; background-color: yellow;}

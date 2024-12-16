@@ -1,0 +1,78 @@
+
+
+@media (max-width: 1000px) {#consentBox {width:80%;background-size: 160% 150%;margin-left: 5%;}}
+@media (min-width: 1001px) {#consentBox {right: 3%;left: 3%; width: 90%; background-size: 100% 100%;}}
+
+
+#consentBox { 
+    background: #1f1f1f; 
+    background-image: url(ZESbakgrund.png);
+    background-repeat: no-repeat;
+    padding: 1.4rem; 
+    border-radius: 1rem; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+    z-index: 99;
+    position: fixed;
+    margin-top: 25vh;
+
+} 
+  
+#consentBox.hide { 
+    opacity: 0; 
+    pointer-events: none; 
+    transform: scale(0.8); 
+    transition: all 0.3s ease; 
+} 
+  
+::selection { 
+    color: #313131; 
+    background: #990c0c; 
+} 
+  
+#consentContent p { 
+    color: #858585; 
+    margin: 10px 0 20px 0; 
+} 
+  
+#consentContent .buttons { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 20px; 
+} 
+  
+.consentButton, 
+.rejectButton { 
+    padding: 12px 30px; 
+    border: none; 
+    outline: none; 
+    color: rgb(255, 255, 255); 
+    font-size: 1rem; 
+    font-weight: 500; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+} 
+  
+.consentButton { 
+    background: #05d93a; 
+    margin-right: 10px; 
+} 
+  
+.rejectButton { 
+    color: #ffffff; 
+    background: transparent; 
+    border: 2px solid #099c2c; 
+    text-decoration: none; 
+} 
+  
+#consentBox img { 
+    max-width: 15vw; 
+} 
+  
+#consentHeader { 
+    font-size: 25px; 
+    font-weight: 600; 
+    margin-top: 10px; 
+}
