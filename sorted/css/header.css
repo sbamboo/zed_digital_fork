@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --text: #000;
+    --bg: #fff;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    scrollbar-width: thin;
+    scrollbar-color: #2b2b2b #4b4b4b;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #fff;
+        --bg: #000;
+    }
+}
+
+
+@media (max-width: 1000px) {
+  .ContactsText {
+    display: none;
+  }
+}
+
+@media (min-width: 1001px) {
+    .ContactsText {
+        display: block
+    }
+}
+
+@media (max-width: 1000px) {
+    .dropbtn {
+        display: block;
+    }
+}
+
+@media (min-width: 1001px) {
+    .dropbtn {
+        display: none
+    }
+}
+
+@media (max-width: 1000px) {
+    .HeaderMid {
+        width: 140%;
+    }
+}
+
+@media (min-width: 1001px) {
+    .HeaderMid {
+        width: 100%;
+    }
+}
+
+
+.content {
+    display: grid;
+    grid-template-rows: 10vh auto auto;
+    grid-gap: 0;
+    align-items: center;
+    background-color: #000;
+}
+
+.Header {
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    z-index: 8;
+    grid-template-columns: 12.5% 12.5% 12.5% 25% 12.5% 12.5% 12.5%;
+    grid-template-rows: 95% 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+.ContactsText {
+    color: rgba(255, 255, 255, 0.726);
+    font-size: 1.5vw;
+    font-weight: 900;
+    font-family: "Bebas Neue", "Google sans", "Arial", "Impact", 'Arial Narrow Bold', sans-serif;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.HeaderMid {
+    height: 100%;
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+
+.Header_middle {
+    align-self: stretch;
+    width: 100%;
+    height: 9rem;
+    border-radius: 1rem;
+    background-color: rgb(0, 0, 0);
+    z-index: 8;
+    grid-column: 1;
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.Header_2border {
+    align-self: stretch;
+    width: 100%;
+    height: 14vh;
+    border-radius: 1rem;
+    background-color: rgba(255, 192, 203, 0);
+    z-index: 8;
+    grid-column: 1;
+    justify-items: center;
+}
+
+#Hem {
+    grid-column: 1;
+    grid-row: 1
+}
+
+#Hem .Contact_border {
+    grid-column: 1;
+}
+
+#Video {
+    grid-column: 2;
+    grid-row: 1
+}
+
+#Video .Contact_border {
+    grid-column: 1;
+}
+
+#KontaktaOss {
+    grid-column: 3;
+    grid-row: 1
+}
+
+#KontaktaOss .Contact_border {
+    grid-column: 1;
+}
+
+#YouTube {
+    grid-column: 5;
+    grid-row: 1
+}
+
+#YouTube .Contact_border {
+    grid-column: 1;
+}
+
+#OmOss {
+    grid-column: 6;
+    grid-row: 1
+}
+
+#OmOss .Contact_border {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#ZES {
+    grid-column: 7;
+    grid-row: 1
+}
+
+#ZES .Contact_border {
+    grid-column: 1;
+}
+
+.Main_logo {
+    width: 100%;
+    background-image: url(Site_ZES.svg);
+    background-repeat: no-repeat;
+}
+
+.TestBox {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.Header_1border {
+    width: 106%;
+    height: 100%;
+    background-color: rgba(92, 92, 92, 0.247);
+    z-index: 7;
+    flex-direction: row;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    margin-right: 6%
+}
+
+a:hover {
+    text-decoration: double;
+    font-size: auto;
+    color: rgb(102, 102, 102);
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-image: url(Menu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 2rem;
+    background-color: #2b2b2b;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin-right: 5rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    font-family: "Bebas Neue", "Google sans", "Arial", "Impact", 'Arial Narrow Bold'
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #000000;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 3rem;
+    min-height: 10rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    border-radius: 1rem;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    font-family: "Bebas Neue", "Google sans", "Arial", "Impact", 'Arial Narrow Bold';
+    font-size: 2rem;
+    display: block;
+    z-index: 9;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #2a2a2a;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
