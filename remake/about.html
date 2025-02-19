@@ -41,10 +41,44 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- JS -->
+    <script src="./js/header_scroll.js" defer></script>
     <script src="./js/cookies.js" defer></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <button id="header-hamburger-button"></button>
+
+            <ul id="header-nav-links">
+                <li class="header-page-link header-page-home"><a href="./index.html">Hem</a></li>
+                <li class="header-page-link header-page-videos"><a href="./videos.html">Videos</a></li>
+                <li class="header-page-link header-page-hire"><a href="./hire.html">Anlita Oss</a></li>
+                
+                <li id="header-mid-segment">
+                    <a href="./index.html">
+                        <img id="header-mid-logo" src="./assets/ZES.svg" alt="ZES Logo">
+                    </a>
+                </li>
+
+                <li class="header-page-link header-page-contact"><a href="./contact.html">Kontakt</a></li>
+                <li class="header-page-link header-page-about header-page-selected"><a href="./about.html">Om Oss</a></li>
+                
+                <li class="header-page-link header-page-link-external header-page-youtube">
+                    <a href="https://www.youtube.com/@ZESStudios">Youtube</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="header-hamburger-dropdown">
+            <a class="header-dropdown-page-link header-page-home" href="./index.html">Home</a>
+            <a class="header-dropdown-page-link header-page-videos" href="./videos.html">Videos</a>
+            <a class="header-dropdown-page-link header-page-hire" href="./hire.html">Anlita Oss</a>
+            <a class="header-dropdown-page-link header-page-contact" href="./contact.html">Kontakt</a>
+            <a class="header-dropdown-page-link header-page-about" href="./about.html">Om Oss</a>
+            <a class="header-dropdown-page-link header-page-link-external header-page-youtube" href="https://www.youtube.com/@ZESStudios">Youtube</a>
+        </div>
+
+    </header>
     <main></main>
     <footer></footer>
 </body>
